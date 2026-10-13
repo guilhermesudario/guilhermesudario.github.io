@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps</title>
+<meta name="description" content="Aplicativos de Guilherme Amancio Sudario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --fundo: #f0e4c6; --folha: #f6eedb; --tinta: #3b2418; --secundario: #6f5646;
+  --sanguinea: #6b3c26; --rubrica: #a63d2a; --filete: #d8c6a0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fundo: #1e2b42; --folha: #24334d; --tinta: #efe4cc; --secundario: #b9ab92;
+    --sanguinea: #e0b48a; --rubrica: #e59a7f; --filete: #3a4a66;
+  }
+}
+:root[data-theme="dark"] {
+  --fundo: #1e2b42; --folha: #24334d; --tinta: #efe4cc; --secundario: #b9ab92;
+  --sanguinea: #e0b48a; --rubrica: #e59a7f; --filete: #3a4a66;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fundo); color: var(--tinta);
+  font: 19px/1.6 'EB Garamond', Georgia, 'Times New Roman', serif;
+}
+main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+.cruz { color: var(--sanguinea); text-align: center; font-size: 1.4rem; margin: 0; }
+h1 { font-weight: 600; font-size: 2rem; line-height: 1.2; text-align: center; margin: .4rem 0 1.6rem; }
+h2 { font-weight: 600; font-size: 1.3rem; color: var(--rubrica); margin: 2.2rem 0 .6rem;
+     padding-top: 1.2rem; border-top: 1px solid var(--filete); }
+p, li { overflow-wrap: anywhere; }
+ul { padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+a { color: var(--sanguinea); }
+strong { font-weight: 600; }
+.atualizado { text-align: center; color: var(--secundario); font-style: italic; }
+.apps { list-style: none; padding: 0; text-align: center; font-size: 1.2rem; }
+footer { margin-top: 3rem; text-align: center; color: var(--secundario); font-size: .95rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="cruz" aria-hidden="true">✠</p>
+<h1>Apps</h1>
+<ul class="apps">
+<li><a href="palavra-sagrada/">Palavra Sagrada</a></li>
+</ul>
+<footer>Contato: <a href="mailto:gs.studio.apps@gmail.com">gs.studio.apps@gmail.com</a></footer>
+</main>
+</body>
+</html>
