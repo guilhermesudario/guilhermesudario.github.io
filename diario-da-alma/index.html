@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diário da Alma — app espírita com O Livro dos Espíritos</title>
+<meta name="description" content="App espírita gratuito para iPhone: diário de sonhos e lembranças, O Livro dos Espíritos de Allan Kardec em tradução nova e estudos sobre reencarnação. Sem login; o diário fica no seu aparelho.">
+<link rel="canonical" href="https://guilhermesudario.github.io/diario-da-alma/">
+<meta property="og:title" content="Diário da Alma — app espírita com O Livro dos Espíritos">
+<meta property="og:description" content="App espírita gratuito para iPhone: diário de sonhos e lembranças, O Livro dos Espíritos de Allan Kardec em tradução nova e estudos sobre reencarnação. Sem login; o diário fica no seu aparelho.">
+<meta property="og:url" content="https://guilhermesudario.github.io/diario-da-alma/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --fundo: #FFF4E8; --cartao: #F6E3CF; --filete: #EBD6C2; --tinta: #3A231C; --secundario: #8A6A5C;
+  --destaque: #C4553A; --rotulo: #B0563F;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fundo: #24161A; --cartao: #33211F; --filete: #4A2F2C; --tinta: #F6E6D6; --secundario: #C2A493;
+    --destaque: #E8876B; --rotulo: #E39A7E;
+  }
+}
+:root[data-theme="dark"] {
+  --fundo: #24161A; --cartao: #33211F; --filete: #4A2F2C; --tinta: #F6E6D6; --secundario: #C2A493;
+  --destaque: #E8876B; --rotulo: #E39A7E;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fundo); color: var(--tinta);
+  font: 17px/1.65 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.ceu {
+  height: 120px; position: relative; overflow: hidden;
+  background: linear-gradient(#F9C98F, #F2A06F 40%, #D96A57 75%, #8E3B4C);
+}
+.ceu::before {
+  content: ''; position: absolute; left: 50%; bottom: -34px; width: 92px; height: 92px; margin-left: -46px;
+  border-radius: 50%; background: #FFE9C2; opacity: .9;
+}
+.ceu::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 18px; background: #3A1F22; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 16px 4rem; }
+.rotulo {
+  margin: 0; text-align: center; color: var(--rotulo); font-size: .75rem; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+h1, h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; }
+h1 { font-size: 2.1rem; line-height: 1.15; text-align: center; margin: .4rem 0 1rem; }
+h2 { font-size: 1.35rem; line-height: 1.25; margin: 2.2rem 0 .6rem; padding-top: 1.2rem;
+     border-top: 1px solid var(--filete); }
+h3 { font-size: 1rem; font-weight: 600; margin: 1.4rem 0 .3rem; }
+p, li { overflow-wrap: anywhere; }
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+a { color: var(--destaque); }
+strong { font-weight: 600; }
+.lead { font-size: 1.1rem; text-align: center; }
+.atualizado { text-align: center; color: var(--secundario); font-style: italic; }
+.cartao { background: var(--cartao); border-radius: 20px; padding: 4px 18px; margin: 1.2rem 0; }
+.selos { list-style: none; padding: 0; margin: 1.2rem 0; display: flex; flex-wrap: wrap; justify-content: center;
+         gap: 8px; }
+.selos li { margin: 0; background: var(--cartao); border-radius: 999px; padding: 4px 14px; font-size: .9rem; }
+.botao {
+  display: block; width: fit-content; margin: 1.4rem auto; padding: 12px 26px; border-radius: 999px;
+  background: var(--destaque); color: #FFF4E8; text-decoration: none; font-weight: 500;
+}
+.links { list-style: none; padding: 0; text-align: center; }
+footer { margin-top: 3rem; text-align: center; color: var(--secundario); font-size: .9rem; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Diário da Alma", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "pt-BR", "description": "App espírita gratuito: diário de lembranças, O Livro dos Espíritos de Allan Kardec em tradução própria, estudos sobre reencarnação e retratos de vidas possíveis.", "url": "https://guilhermesudario.github.io/diario-da-alma/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O Diário da Alma é um app espírita?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. É um app de espiritismo para iPhone que junta um diário pessoal a O Livro dos Espíritos (1860), de Allan Kardec, em tradução própria feita direto do original francês, com as 1.019 perguntas e respostas."}}, {"@type": "Question", "name": "O app diz quem eu fui em outra vida?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Os retratos mostram uma vida possível, escolhida pelos temas que mais aparecem nas suas lembranças, como um convite à reflexão. Não são revelação, consulta espiritual nem regressão."}}, {"@type": "Question", "name": "O que eu anoto no diário?", "acceptedAnswer": {"@type": "Answer", "text": "Sonhos, déjà vus, afinidades, medos antigos e sentimentos sem motivo, com a época, o lugar e o sentimento que cada um traz. Ao guardar, o app mostra o que O Livro dos Espíritos diz sobre aquilo."}}, {"@type": "Question", "name": "O Diário da Alma é gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Todas as funções são gratuitas, sem assinatura e sem compras; o app se mantém com anúncios."}}, {"@type": "Question", "name": "Meu diário vai para algum servidor?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O diário fica só no seu iPhone: o app não tem login nem servidor e nunca envia o que você escreve, nem aos anunciantes. Para levar o diário a outro celular, exporte uma cópia."}}, {"@type": "Question", "name": "Funciona sem internet?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O diário, O Livro dos Espíritos e os estudos funcionam sem internet; só os anúncios precisam de conexão."}}]}</script>
+</head>
+<body>
+<div class="ceu" aria-hidden="true"></div>
+<main>
+<p class="rotulo">App espírita gratuito</p>
+<h1>Diário da Alma</h1>
+<p class="lead">Um diário das lembranças que parecem vir de antes, lido à luz de <em>O Livro dos Espíritos</em>, de Allan Kardec.</p>
+<ul class="selos"><li>Gratuito</li><li>Sem login</li><li>Diário só no seu iPhone</li><li>Funciona sem internet</li></ul>
+<p class="atualizado">Em breve na App Store, para iPhone.</p>
+<div class="cartao"><p><strong>O Diário da Alma é um app de espiritismo para iPhone.</strong> Nele você anota sonhos, déjà vus, afinidades, medos antigos e sentimentos sem motivo; o app mostra o que O Livro dos Espíritos diz sobre cada um, responde às suas perguntas com as questões de Kardec e, a cada mês, monta um retrato com uma vida possível. Tudo fica no aparelho.</p></div>
+<h2>O que tem no app</h2>
+<h3>Diário de lembranças</h3>
+<p>Cada lembrança ganha um tipo (sonho, déjà vu, afinidade, medo antigo, sentimento sem motivo) e etiquetas de época, lugar, elemento e sentimento. Ao guardar, aparecem os trechos de Kardec ligados a ela.</p>
+<h3>Pergunte ao Livro</h3>
+<p>Escreva uma dúvida, como “por que esquecemos o passado?”, e veja as perguntas de O Livro dos Espíritos mais próximas, sempre com o número da questão. O livro inteiro também pode ser lido por partes.</p>
+<h3>O Livro dos Espíritos em tradução nova</h3>
+<p>A tradução foi feita para o app a partir da 2.ª edição francesa (Paris, 1860), que está em domínio público: as perguntas, as respostas dos Espíritos e os comentários de Kardec.</p>
+<h3>Estudos guiados</h3>
+<p>Seis estudos curtos sobre reencarnação: por que voltamos a viver, por que esquecemos o passado, sono e sonhos, almas afins, a escolha das provas e a missão de cada um.</p>
+<h3>Retrato do mês</h3>
+<p>O app conta os temas que mais apareceram nas suas lembranças e mostra uma vida possível que combina com eles. Os retratos formam a sua linha das vidas.</p>
+<h2>Perguntas frequentes</h2>
+<h3>O Diário da Alma é um app espírita?</h3>
+<p>Sim. É um app de espiritismo para iPhone que junta um diário pessoal a O Livro dos Espíritos (1860), de Allan Kardec, em tradução própria feita direto do original francês, com as 1.019 perguntas e respostas.</p>
+<h3>O app diz quem eu fui em outra vida?</h3>
+<p>Não. Os retratos mostram uma vida possível, escolhida pelos temas que mais aparecem nas suas lembranças, como um convite à reflexão. Não são revelação, consulta espiritual nem regressão.</p>
+<h3>O que eu anoto no diário?</h3>
+<p>Sonhos, déjà vus, afinidades, medos antigos e sentimentos sem motivo, com a época, o lugar e o sentimento que cada um traz. Ao guardar, o app mostra o que O Livro dos Espíritos diz sobre aquilo.</p>
+<h3>O Diário da Alma é gratuito?</h3>
+<p>Sim. Todas as funções são gratuitas, sem assinatura e sem compras; o app se mantém com anúncios.</p>
+<h3>Meu diário vai para algum servidor?</h3>
+<p>Não. O diário fica só no seu iPhone: o app não tem login nem servidor e nunca envia o que você escreve, nem aos anunciantes. Para levar o diário a outro celular, exporte uma cópia.</p>
+<h3>Funciona sem internet?</h3>
+<p>Sim. O diário, O Livro dos Espíritos e os estudos funcionam sem internet; só os anúncios precisam de conexão.</p>
+<h2>Suporte</h2>
+<p>Dúvidas, sugestões ou problemas: escreva para <a href="mailto:gs.studio.apps@gmail.com">gs.studio.apps@gmail.com</a>.</p>
+<ul class="links"><li><a href="privacidade/">Política de Privacidade</a></li><li><a href="termos/">Termos de Uso</a></li></ul>
+<footer>Diário da Alma · Contato: <a href="mailto:gs.studio.apps@gmail.com">gs.studio.apps@gmail.com</a></footer>
+</main>
+</body>
+</html>
